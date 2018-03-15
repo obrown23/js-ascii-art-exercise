@@ -124,7 +124,7 @@ First try...
 
 ```js
 for (var outerCounter = 0; outerCounter < 4; outerCounter++) {
-  for (var innerCounter = 1; innerCounter < 4; innerCounter++) {
+  for (var innerCounter = 0; innerCounter < 4; innerCounter++) {
     console.log('outer:', outerCounter, 'inner:', innerCounter)
   }
 }
@@ -154,6 +154,8 @@ for (var rowNumber = 0; rowNumber < 4; rowNumber++) {
 ```
 
 ### Part III: ASCII Art Pyramid
+
+Check out [`.padStart` on Mozilla Developer Network (MDN)...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
 
 ```
      ^
