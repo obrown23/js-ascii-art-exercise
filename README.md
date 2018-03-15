@@ -20,9 +20,9 @@ People tend to feel more self-conscious and mistake-prone when people are watchi
 
 > *from [the npm package `getdogs`](https://www.npmjs.com/package/getdogs)*.
 
-For this exercise, we're going to do something more manageable than the photorealistic ASCII art shown above. We're going to draw a few shapes using `for` loops. The exercise contains four parts, but the basic `for` loop can re-used with each part of this lab.
+For this exercise, we're going to do something more manageable than the photorealistic ASCII art shown above. We're going to draw a few shapes using `for` loops in the browser console using `console.log()`. The exercise contains four parts, but the basic `for` loop can re-used with each part of this lab.
 
-The goal isn't to finish all four, which are altogether more than one could get done in a couple hours at this point in your web development journey.
+The goal isn't to finish all four, which are altogether more than one could get done in a couple hours, at least at this point in your web development journey.
 
 ### Part I: ASCII Art Square
 
@@ -108,15 +108,14 @@ for (var index = 0; index < kardashians.length; index++) {
 }
 ```
 
-For loops are often used to iterate over arrays, meaning to go through an array, item by item, and do somthing with it.
+For loops are often used to iterate over arrays, meaning to go through an array, item by item, and do something with it. In this example, we are `console.log`ging each string in the `kardashians` array.
 
 #### Nested `for` loops
 
 > ***Attempt this section only if you would like an additional challenge.***
 
-Nesting `for` loops is generally something you want to avoid, especially with large inputs. How
 
-This is a bigger hurdle to jump over since we're going to use **nested for loops**. Since we have to do a bit of research to tackle this challenge, we have a couple examples that we can work through.
+This is a bigger hurdle to jump over since we're going to use **nested for loops**. Nesting `for` loops is generally something you want to avoid, especially with large inputs. Since we have to do a bit of research to tackle this challenge, we have a couple examples that we can work through.
 
 > Try these examples out in your browser console (CMD+OPT+I in *Chrome*)
 
