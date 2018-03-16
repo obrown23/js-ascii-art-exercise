@@ -12,7 +12,7 @@ For this lab you will be getting into pairs and working together. One person sho
 
 Think of the driver and navigator as guidelines for your roles. You will both verbalize your problem-solving thought process *and also* act as a sounding board for the person you work with. Make sure to *strive for a balance* of coming up with ideas and listening to the ideas of your partner.
 
-People tend to feel more self-conscious and mistake-prone when people are watching over our shoulder. The role of the navigator isn't necessarily to *critically review* the code the driver is typing in, but has a more holisitic role of guiding the conversation and relieving the driver of some of the cognitive labor.
+People tend to feel more self-conscious and mistake-prone when people are watching over our shoulder. The role of the navigator isn't necessarily to *critically review* the code the driver is typing in, but has a more holistic role of guiding the conversation and relieving the driver of some of the cognitive labor.
 
 ## Lab Exercise
 
