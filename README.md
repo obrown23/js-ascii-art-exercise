@@ -93,11 +93,10 @@ VV
 V
 ```
 
-With the triangle, it will be necessary to figure out how to add one per line. This is somewhat tricky, and there several possible approaches to this 
+There are two simple approaches to this problem that come to mind... 
 
-One approach might to be put a for loop within a for loop. That approach is more complicated can be attempted if you want a challenge. Otherwise, we offer you a single hint: how could you use an array with a single for-loop?
-
-To answer this leading question, let's look at an example.
+#### Rows in an Array
+One might involve storing each row in an array, iterating over the array with a for-loop, and printing out each item in the array in a for loop.
 
 > Run this code in your browser console (CMD+OPT+I in *Chrome*)
 
@@ -110,46 +109,24 @@ for (var index = 0; index < kardashians.length; index++) {
 
 For loops are often used to iterate over arrays, meaning to go through an array, item by item, and do something with it. In this example, we are `console.log`ging each string in the `kardashians` array.
 
-#### Nested `for` loops
+#### String Concatenation
 
-> ***Attempt this section only if you would like an additional challenge.***
+String concatenation is a complicated-sounding way of saying joining strings together.
 
-
-This is a bigger hurdle to jump over since we're going to use **nested for loops**. Nesting `for` loops is generally something you want to avoid, especially with large inputs. Since we have to do a bit of research to tackle this challenge, we have a couple examples that we can work through.
-
-> Try these examples out in your browser console (CMD+OPT+I in *Chrome*)
-
-First try...
-
+Try playing around with the examples below...
 ```js
-for (var outerCounter = 0; outerCounter < 4; outerCounter++) {
-  for (var innerCounter = 0; innerCounter < 4; innerCounter++) {
-    console.log('outer:', outerCounter, 'inner:', innerCounter)
-  }
-}
-```
+var coolWord = 'spatula'
+console.log(coolWord)
+var coolWords = 'spatula' + ' city'
+console.log(coolWords)
 
-If we make the following changes, firstly, starting `innerCounter` at 1, and secondly, substituting `4` for `outerCounter + 1`, we get...
-
-```diff
-for (var outerCounter = 0; outerCounter < 4; outerCounter++) {
-- for (var innerCounter = 0; innerCounter < 4; innerCounter++) {
-+ for (var innerCounter = 1; innerCounter < outerCounter + 1; innerCounter++) {
-    console.log('outer:', outerCounter, 'inner:', innerCounter)
-  }
-}
-```
-
-Now, the inner loop is counting up to the value of the outer loop. Why is this useful? Think about how many triangles we want per line. On the first line, we want 1 triangle. On the second line, 2 triangles.
-
-Let's rename some variables to make the connection to the problem more apparent...
-
-```js
-for (var rowNumber = 0; rowNumber < 4; rowNumber++) {
-  for (var numberOfTriangles = 1; numberOfTriangles < rowNumber; numberOfTriangles++) {
-   console.log('row number:', rowNumber, 'number of triangles:', numberOfTriangles + 1)
-  }
-}
+var buildMeUpString = ''
+buildMeUpString = buildMeUpString + 'I came from nothing!'
+console.log(buildMeUpString)
+buildMeUpString += ' Now I have 2 sentences!'
+console.log(buildMeUpString)
+buildMeUpString += ' I am growing so quickly.'
+console.log(buildMeUpString)
 ```
 
 ### Part III: ASCII Art Pyramid
@@ -194,6 +171,6 @@ It may be helpful to define some constant values for use with your `for` loop.
 > Hint...
 
 ```js
-var DAYS_IN_MONTH = 31
-var DAYS_IN_WEEK = 7
+const DAYS_IN_MONTH = 31
+const DAYS_IN_WEEK = 7
 ```
