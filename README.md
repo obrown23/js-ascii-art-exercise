@@ -131,7 +131,42 @@ console.log(buildMeUpString)
 
 ### Part III: ASCII Art Pyramid
 
-Check out [`.padStart` on Mozilla Developer Network (MDN)...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
+Count the blocks in each part of the pyramid? What do they have in common? Are these numbers even and odd, all odd, or all even?
+
+There are at least a couple approaches possible here...
+
+### Modifying the for-loop
+
+With the for loops we've seen so far, we've been counting by 1. What if we counted by a different value? Think about the third term in the for loop, which so far has been something like `index++`. [Check this article on addition assignments here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators#Addition_assignment).
+
+### Modulus
+
+We could also bring a conditional statement into our for-loops. How can we check for evenness or oddness? The modulus operator `%` can be used to determine evenness or oddness. The mathematical term for this is **parity**.
+
+The modulus operator `%` determine how much of a remainder is left after performing integer division on two numbers: `3 % 2` will return the result `1`, since `1` is what remainder after `3` is integer-divided by `2`. With modulus or integer divison, we're in the land of integers where no decimals exist.
+
+We can determine the **parity**, or whether or not a number is even, by checking to see if it is divisible by 2. You have already seen this for fizzbuzz with 3 and 5.
+
+```js
+var number = 2
+var otherNumber = 3
+
+if (number % 2 === 0) {
+  console.log('number is even')
+} else {
+  console.log('number is odd')
+}
+
+if (otherNumber % 2 === 0) {
+  console.log('otherNumber is even')
+} else {
+  console.log('otherNumber is odd')
+}
+```
+
+#### Spacing
+
+You can build your own spacing string to add to the front of the row. There is also a recently added String method called `.padStart`, too. Check out [`.padStart` on Mozilla Developer Network (MDN)...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
 
 ```
      ^
