@@ -6,3 +6,11 @@ let v = "v v v v v v v v v v";
 
 }
 
+
+let boots = ['v', 'vv', 'vvv','vvvv','vvvvv','vvvvvv','vvvvvvv', 'vvvvvvvv', 'vvvvvvvvvv','vvvvvvvvvvv']
+for (var i = 0; i < boots.length; i+=2) {
+  console.log(boots[i])
+}
+
+
+
